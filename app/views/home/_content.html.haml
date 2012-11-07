@@ -1,12 +1,12 @@
 %h3= "@mixin #{sample_class_name}"
 .indent
-  %h4 Usage
+  %h4 Usage:
   %pre
     :preserve
       .#{sample_class_name} {
         @include #{sample_class_name};
       }
-  %h4 Effect
+  %h4 Effect:
   .effect.well
     %div{class: sample_class_name}
       = sample_class_name

@@ -1,9 +1,17 @@
 - content_for :sidemenu do
   %ul.nav.nav-tabs.nav-stacked
+    %li= link_to "Introduction", "#introduction"
     %li= link_to "Zurui lines", "#line"
     %li= link_to "Zurui font shadows", "#font-shadow"
     %li= link_to "Zurui gradations", "#gradation"
     %li= link_to "Zurui box shadows", "#box-shadow"
+
+%section#introduction
+  %h2 Introduction
+  .indent
+    .indent.well
+      :plain
+        #{link_to "zurui-sass-rails", "https://github.com/mahm/zurui-sass-rails"} で使えるSass Mixinsのサンプルページです。このサンプルページ自体のソースは #{link_to "https://github.com/mahm/zurui-sample", "https://github.com/mahm/zurui-sample"} にあります。
 
 %section#line
   %h2 Zurui lines
