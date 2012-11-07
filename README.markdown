@@ -1,3 +1,3 @@
-## My customized bootstrap
+## Sample by zurui-sass-rails
 
-machidaさん、ありがとう！
+[zurui-sass-rails](https://github.com/mahm/zurui-sass-rails)
