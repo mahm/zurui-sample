@@ -17,7 +17,7 @@ group :assets do
   gem 'sassy-buttons'
   gem 'font-awesome-sass-rails'
   gem "compass-rgbapng", :require => "rgbapng"
-  gem "zurui-sass-rails", path: "/Users/mah_lab/dev/workspace/zurui-sass-rails"
+  gem "zurui-sass-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
