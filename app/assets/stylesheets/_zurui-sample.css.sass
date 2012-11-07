@@ -1,0 +1,82 @@
+@mixin sample
+  letter-spacing: 1px
+  padding: 10px
+  @include zurui-ts-000(.1)
+
+@mixin lines-sample
+  @include sample
+  @include zurui-box-outer
+  width: 180px
+  height: 80px
+  background-color: #eee
+
+.zurui-line-top
+  @include lines-sample
+  @include zurui-line-top(.1, 1.0)
+
+.zurui-line-right
+  @include lines-sample
+  @include zurui-line-right(.1, 1.0)
+
+.zurui-line-left
+  @include lines-sample
+  @include zurui-line-left(.1, 1.0)
+
+.zurui-line-bottom
+  @include lines-sample
+  @include zurui-line-bottom(.1, 1.0)
+
+@mixin shadows-sample
+  font-size: 24px
+  padding: 20px
+  font-weight: 800
+
+.zurui-ts-000
+  @include shadows-sample
+  @include zurui-ts-000(.1)
+
+.zurui-ts-fff
+  @include shadows-sample
+  @include zurui-ts-fff(.1)
+
+@mixin gradations-sample
+  @include sample
+  width: 180px
+  height: 80px
+  color: white
+  border-radius: 4px
+  @include zurui-box-outer
+
+.zurui-gradient-top-lighten
+  @include gradations-sample
+  @include zurui-gradient-top-lighten
+
+.zurui-gradient-top-darken
+  @include gradations-sample
+  @include zurui-gradient-top-darken
+
+@mixin box-shadows-sample
+  @include sample
+  width: 180px
+  height: 80px
+  border-radius: 4px
+
+.zurui-box-outer
+  @include box-shadows-sample
+  @include zurui-box-outer
+  background-color: #ccc
+
+.zurui-box-inner
+  @include box-shadows-sample
+  @include zurui-box-inner
+  background-image: image-url("bedge_grunge.png")
+
+.zurui-box-deboss
+  @include box-shadows-sample
+  @include zurui-box-deboss(.1, .4, .7)
+  background-color: #eee
+
+.zurui-box-emboss
+  @include box-shadows-sample
+  @include zurui-box-emboss(.1, .2, .7)
+  background-color: #eee

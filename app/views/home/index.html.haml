@@ -1,0 +1,30 @@
+- content_for :sidemenu do
+  %ul.nav.nav-tabs.nav-stacked
+    %li= link_to "Zurui lines", "#line"
+    %li= link_to "Zurui font shadows", "#font-shadow"
+    %li= link_to "Zurui gradations", "#gradation"
+    %li= link_to "Zurui box shadows", "#box-shadow"
+
+%section#line
+  %h2 Zurui lines
+  .indent
+    - %w(zurui-line-top zurui-line-right zurui-line-left zurui-line-bottom).each do |sample_class|
+      = render "content", sample_class_name: sample_class
+
+%section#font-shadow
+  %h2 Zurui font shadows
+  .indent
+    - %w(zurui-ts-000 zurui-ts-fff).each do |sample_class|
+      = render "content", sample_class_name: sample_class
+
+%section#gradation
+  %h2 Zurui gradations
+  .indent
+    - %w(zurui-gradient-top-lighten zurui-gradient-top-darken).each do |sample_class|
+      = render "content", sample_class_name: sample_class
+
+%section#box-shadow
+  %h2 Zurui box shadows
+  .indent
+    - %w(zurui-box-outer zurui-box-inner zurui-box-deboss zurui-box-emboss).each do |sample_class|
+      = render "content", sample_class_name: sample_class

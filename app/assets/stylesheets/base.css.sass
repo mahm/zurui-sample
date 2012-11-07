@@ -1,0 +1,79 @@
+@import colors/background_image
+//@import colors/colorlovers
+
+$textColor: $base-text-color
+
+$bodyBackground: $base-color
+
+$heroUnitBackground: $main-color
+$heroUnitHeadingColor: $hero-unit-text-color
+$heroUnitLeadColor: $hero-unit-text-color
+
+$btnPrimaryBackground: $accent-color
+$btnPrimaryBackgroundHighlight: adjust-hue($btnPrimaryBackground, 5%)
+
+$btnBackground: $base-color
+$btnBackgroundHighlight: darken($base-color, 10%)
+$btnBorder: darken($base-color, 10%)
+
+$navbarBackgroundHighlight: $base-color
+$navbarBackground: $base-color
+
+$navbarText: $base-text-color
+$navbarLinkColor: $base-text-color
+$navbarLinkColorHover: $base-text-color - 60
+$navbarLinkColorActive: darken($base-text-color, 5%)
+$navbarLinkBackgroundHover: $base-color - 10
+$navbarLinkBackgroundActive: darken($navbarBackground, 5%)
+$navbarBrandColor: $base-text-color
+
+$hrBorder: darken($base-color, 10%)
+
+$eyecatchBackground: $heroUnitBackground
+$eyecatchTextColor: $hero-unit-text-color
+
+@import bootstrap
+@import bootstrap-responsive
+@import compass/utilities
+@import compass/css3
+@import font-awesome
+@import sassy-buttons
+@import eyecatch
+@import zurui-sass
+@import zurui-sample
+@import url(http://fonts.googleapis.com/css?family=Lobster)
+
+@mixin em-font
+  font-family: 'Lobster', cursive
+
+body
+  padding: 60px 0 0
+
+body.home_eyecatch
+  padding: 40px 0 0
+
+.brand
+  @include em-font
+
+.effect
+
+.indent
+  margin-left: 20px
+  margin-bottom: 20px
+
+.nav-stacked
+  @include zurui-gradient-top-lighten(#eee, 10%)
+  font-weight: bold
+
+h2
+  @include em-font
+  font-size: 48px
+  @include zurui-ts-000(.1)
+
+h3
+  @include zurui-ts-000(.1)
+  @include zurui-line-bottom
+  margin-bottom: 10px
+
+h4
+  @include zurui-ts-000(.1)
