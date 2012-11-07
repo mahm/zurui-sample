@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/machida/bootstrap-sass.git
+  revision: 0c06fa390059631830f21e25b194f2f105602eaa
+  branch: master
+  specs:
+    bootstrap-sass (2.1.0.1)
+
+GIT
   remote: git://github.com/mataki/heroku_backup_task.git
   revision: 9b57f083b7ade38e43b9c7d46391137920a81fc1
   specs:
@@ -7,13 +14,6 @@ GIT
       fog
       heroku (>= 2.30.2)
       rake
-
-GIT
-  remote: git@github.com:machida/bootstrap-sass.git
-  revision: 0c06fa390059631830f21e25b194f2f105602eaa
-  branch: master
-  specs:
-    bootstrap-sass (2.1.0.1)
 
 GEM
   remote: https://rubygems.org/
